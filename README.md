@@ -30,8 +30,8 @@ You need Node.js and npm installed, as well as access to a MongoDB instance (loc
 
 1.  Clone the repository:
     ```bash
-    git clone [YOUR-REPO-URL]
-    cd graphql-rbac-auth
+    git clone https://github.com/HanishaMohinani/GraphQL-RBAC.git
+    cd GraphQL-RBAC
     ```
 2.  Install dependencies:
     ```bash
