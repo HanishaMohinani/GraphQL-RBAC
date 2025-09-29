@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output (if any)
+dist/
+build/
+
+# VS Code settings
+.vscode/
+
+# Optional: coverage reports if you add tests
+coverage/
+
+# Optional: database files (if using SQLite, not MongoDB)
+*.sqlite
+*.db
