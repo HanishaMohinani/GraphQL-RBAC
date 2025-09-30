@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const User = require('../models/User');
 const Role = require('../models/Role');
 const Ticket = require('../models/Ticket');
@@ -53,8 +54,8 @@ module.exports = {
         defaultRole._id.toString(),
         role._id.toString()
       ]);
-    
-      user.roles = Array.from(rolesSet).map(id => mongoose.Types.ObjectId(id));
+      
+      user.roles = Array.from(rolesSet).map(id => new mongoose.Types.ObjectId(id));
     
       await user.save();
       return user.populate("roles");
